@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/RockBand.unity
+- path: Assets/Scenes/SecondActivity.unity
   isLoaded: 1
   isActive: 1
