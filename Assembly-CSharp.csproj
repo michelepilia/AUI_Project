@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\AudioScript.cs" />
      <Compile Include="Assets\Scripts\ChangeInstrument.cs" />
      <Compile Include="Assets\Scripts\LightPinSpot.cs" />
+     <Compile Include="Assets\Scripts\MovingBackLight.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/ninon/GitHub Repos/AUI_Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
