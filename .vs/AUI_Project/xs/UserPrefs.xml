@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{C23FFD63-12D2-13A6-FCFA-E851FDAB06AE}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MouseOverQuiz.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/clickOpenQuiz.cs">
     <Files>
       <File FileName="Assets/Scripts/clickOpenQuiz.cs" Line="20" Column="6" />
-      <File FileName="Assets/Scripts/MouseOverQuiz.cs" Line="21" Column="1" />
+      <File FileName="Assets/Scripts/MouseOverQuiz.cs" Line="32" Column="54" />
+      <File FileName="Assets/Scripts/comeBackButton.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,7 +11,7 @@
           <Node name="AUI_Project" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="MouseOverQuiz.cs" selected="True" />
+                <Node name="clickOpenQuiz.cs" selected="True" />
               </Node>
             </Node>
           </Node>

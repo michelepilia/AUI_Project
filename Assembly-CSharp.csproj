@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\AudioScript.cs" />
     <Compile Include="Assets\Scripts\clickOpenQuiz.cs" />
+    <Compile Include="Assets\Scripts\comeBackButton.cs" />
     <Compile Include="Assets\Scripts\MouseOverQuiz.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/michelepilia/AUI_Project/AUI_Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

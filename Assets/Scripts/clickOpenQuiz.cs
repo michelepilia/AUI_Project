@@ -18,16 +18,13 @@ public class clickOpenQuiz : MonoBehaviour
 
     private void OnMouseDown()
     {
+        GameObject.Find("Wall Camera").SetActive(false);
         GameObject.Find("GeneralCanvas").SetActive(false);
+        //GameObject.Find("BackButtonCanvas").SetActive(true);
         transform.GetChild(0).gameObject.SetActive(true);
         transform.GetChild(1).gameObject.SetActive(true);
         transform.GetChild(2).gameObject.SetActive(true);
         transform.GetChild(3).gameObject.SetActive(true);
-        Quiz();
-    }
-
-    private void Quiz() {
-
     }
 
 }
