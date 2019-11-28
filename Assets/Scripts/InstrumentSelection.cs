@@ -20,10 +20,12 @@ public class InstrumentSelection : MonoBehaviour
 
     void OnMouseDown() {
         wall.GetComponent<HandleInstrumentsSelection>().DeselectAllExcept();
+
         selected = !selected;
         if (selected)
         {
             material.color = Color.green;  
+            wall.GetComponent<HandleInstrumentsSelection>().SetActive(gameObject);
         }
         else
         {

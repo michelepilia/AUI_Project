@@ -4,11 +4,11 @@ using System.Collections.Generic;
 
 public class AudioScript : MonoBehaviour
 {
-    //public AudioClip Sample;
-    //public AudioSource SampleSource;
+    public AudioClip Sample;
+    public AudioSource SampleSource;
     void Start()
     {
-        //SampleSource.clip = Sample;
+        SampleSource.clip = Sample;
     }
     /*
     void Update()

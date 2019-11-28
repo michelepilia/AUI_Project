@@ -6,6 +6,7 @@ public class HandleInstrumentsSelection : MonoBehaviour
 {
 
     public GameObject[] instruments;
+    public GameObject playingInstrument;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,5 +25,9 @@ public class HandleInstrumentsSelection : MonoBehaviour
         {
             item.GetComponent<InstrumentSelection>().Deselect();
         }
+    }
+
+    public void SetActive(GameObject active) {
+        playingInstrument = active;
     }
 }
