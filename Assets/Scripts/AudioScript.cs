@@ -8,18 +8,16 @@ public class AudioScript : MonoBehaviour
     public AudioSource SampleSource;
     void Start()
     {
-        SampleSource.clip = Sample;
     }
-    /*
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Space)) {
-            gameObject.GetComponent<AudioSource>().Play();
-            //SampleSource.Play();
-        }
-    }*/
-    void OnMouseDown() {
+
+    public void OnMouseDown() {
         gameObject.GetComponent<AudioSource>().Play();
+    }
+
+    public void AssignSample(AudioClip note) {
+        this.SampleSource.clip = note;
+        this.Sample = note;
+
     }
     
 }

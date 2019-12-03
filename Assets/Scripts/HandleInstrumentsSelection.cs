@@ -7,6 +7,8 @@ public class HandleInstrumentsSelection : MonoBehaviour
 
     public GameObject[] instruments;
     public GameObject playingInstrument;
+    public GameObject[] gridCells;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,5 +31,21 @@ public class HandleInstrumentsSelection : MonoBehaviour
 
     public void SetActive(GameObject active) {
         playingInstrument = active;
+        SetSamples();
+    }
+
+    private void SetSamples() {
+        //Once the instrument has been selected each ceel of the grid
+        //receives as audio sample the correct one (in note and instrument sound)
+        int i = 0;
+        foreach (GameObject item in gridCells)
+        {
+            if (i >6)
+            {
+                break;
+            }
+            item.GetComponent<AudioScript>().AssignSample(playingInstrument.GetComponent<InstrumentSelection>().notes[i]);
+            i++;
+        }
     }
 }
