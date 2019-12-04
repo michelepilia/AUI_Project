@@ -6,12 +6,19 @@ public class AudioScript : MonoBehaviour
 {
     public AudioClip Sample;
     public AudioSource SampleSource;
+    public GameObject Wall;
+    public GameObject MusicScoreRow;
+    
     void Start()
     {
     }
 
-    public void OnMouseDown() {
+    void OnMouseDown() {
+        //Wall.GetComponent<HandleInstrumentsSelection>().DeselectAllFromScore();
         gameObject.GetComponent<AudioSource>().Play();
+        MusicScoreRow.GetComponent<MusicScoreNote>().Play();
+        
+    
     }
 
     public void AssignSample(AudioClip note) {

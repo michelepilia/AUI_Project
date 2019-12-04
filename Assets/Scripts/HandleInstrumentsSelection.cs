@@ -8,6 +8,9 @@ public class HandleInstrumentsSelection : MonoBehaviour
     public GameObject[] instruments;
     public GameObject playingInstrument;
     public GameObject[] gridCells;
+    public GameObject[] musicRows;
+    public Material playedNoteMaterial;
+    public Material defaultNoteMaterial;
 
     // Start is called before the first frame update
     void Start()
@@ -46,6 +49,15 @@ public class HandleInstrumentsSelection : MonoBehaviour
             }
             item.GetComponent<AudioScript>().AssignSample(playingInstrument.GetComponent<InstrumentSelection>().notes[i]);
             i++;
+        }
+    }
+
+    public void DeselectAllFromScore() {
+        
+        for (int i = 0; i < 6; i++)
+        {
+            musicRows[i].GetComponent<MusicScoreNote>().UnPlay();
+            //musicRows[i].GetComponent<Renderer>().material.color = Color.white;      
         }
     }
 }
