@@ -8,16 +8,16 @@ public class AudioScript : MonoBehaviour
     public AudioSource SampleSource;
     public GameObject Wall;
     public GameObject MusicScoreRow;
+    public GameObject playerCamera;
     
     void Start()
     {
     }
 
     void OnMouseDown() {
-        //Wall.GetComponent<HandleInstrumentsSelection>().DeselectAllFromScore();
+                    //Wall.GetComponent<HandleInstrumentsSelection>().DeselectAllFromScore();
         gameObject.GetComponent<AudioSource>().Play();
         MusicScoreRow.GetComponent<MusicScoreNote>().Play();
-        
     
     }
 
@@ -25,6 +25,10 @@ public class AudioScript : MonoBehaviour
         this.SampleSource.clip = note;
         this.Sample = note;
 
+    }
+
+     void OnMouseOver() {
+        Debug.Log("MouseOver");
     }
     
 }
