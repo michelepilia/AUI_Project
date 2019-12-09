@@ -53,12 +53,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Clickable.cs" />
      <Compile Include="Assets\Scripts\AudioScript.cs" />
      <Compile Include="Assets\Scripts\HandleInstrumentsSelection.cs" />
      <Compile Include="Assets\Scripts\InstrumentSelection.cs" />
      <Compile Include="Assets\Scripts\MusicScoreNote.cs" />
      <Compile Include="Assets\Scripts\NotesPlayerScript.cs" />
      <Compile Include="Assets\Scripts\SelectionManager.cs" />
+     <Compile Include="Assets\Scripts\SelectionScript.cs" />
      <Compile Include="Assets\Scripts\UIFollowMouse.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/ninon/GitHub Repos/aui_training/AUI_Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
