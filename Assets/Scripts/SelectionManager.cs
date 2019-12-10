@@ -10,19 +10,19 @@ public class SelectionManager : MonoBehaviour
     [SerializeField] private Color defaultColor;
     [SerializeField] private Color highlightColor;
     [SerializeField] private Color selectedColor;
+    [SerializeField] private GameObject[] instruments;
     private int selectedInstrument;
     private int hoverInstrument;
 
     private Transform _selection;
-    // Start is called before the first frame update
+
     void Start()
     {
         selectedInstrument = -1;
         hoverInstrument = -1;
         
     }
-
-    // Update is called once per frame
+/*
     void Update()
     {   
 
@@ -42,32 +42,41 @@ public class SelectionManager : MonoBehaviour
 
 
                 if (selectionRenderer != null ) {
-                    //Debug.Log("OK");
-                        selectionRenderer.material.color = highlightColor;
-                
+                   selectionRenderer.material.color = highlightColor;
                    hoverInstrument = selection.GetComponent<Clickable>().getId();
 
                 }
                 _selection = selection;
-
-
             }
         }
-    }
+
+    }*/
        
     
 
-    public void Click(int instrumentID) {
-        var selectionRenderer = _selection.GetComponent<Renderer>();
-        if(selectedInstrument==instrumentID) {
-            selectionRenderer.material.color = defaultColor;
-            selectedInstrument = -1;
+    public void Click(int instrumentId) {
+
+        if(selectedInstrument==-1) {
             
+            selectedInstrument=instrumentId;
+            var instrumentMaterial = instruments[selectedInstrument].GetComponent<Renderer>().material;
+            instrumentMaterial.color = selectedColor;
+
         }
-        else
-        {
-            selectionRenderer.material.color = selectedColor;
-            selectedInstrument = instrumentID;
+        else if(selectedInstrument==instrumentId) {
+
+            var instrumentMaterial = instruments[selectedInstrument].GetComponent<Renderer>().material;
+            instrumentMaterial.color = defaultColor;
+            selectedInstrument = -1;
+
+        }
+        else if(selectedInstrument!=instrumentId) {
+
+            var instrumentMaterial = instruments[selectedInstrument].GetComponent<Renderer>().material;
+            instrumentMaterial.color = defaultColor;
+            selectedInstrument = instrumentId;
+            instrumentMaterial = instruments[selectedInstrument].GetComponent<Renderer>().material;
+            instrumentMaterial.color = selectedColor;
 
         }
 

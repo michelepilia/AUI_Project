@@ -19,9 +19,7 @@ public class Clickable : MonoBehaviour
     }
 
     void OnMouseDown() {
-        //Debug.Log("PRESSED!!");
         selectionManager.GetComponent<SelectionManager>().Click(ID);
-
     }
     public int getId() {
         return ID;
