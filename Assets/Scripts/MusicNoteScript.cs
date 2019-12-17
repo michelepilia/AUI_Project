@@ -6,6 +6,7 @@ public class MusicNoteScript : MonoBehaviour
 {
 
     [SerializeField] private string noteID;
+    [SerializeField] private GameObject musicalScore;
 
     // Start is called before the first frame update
     void Start()
@@ -21,5 +22,6 @@ public class MusicNoteScript : MonoBehaviour
 
     public void ClickAction() {
        Debug.Log("playing: " + noteID);
+       musicalScore.GetComponent<MusicScoreHandler>().displayNote(noteID);
     }
 }

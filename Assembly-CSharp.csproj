@@ -55,6 +55,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Clickable.cs" />
      <Compile Include="Assets\Scripts\MusicNoteScript.cs" />
+     <Compile Include="Assets\Scripts\MusicScoreHandler.cs" />
      <Compile Include="Assets\Scripts\NoteManagerScript.cs" />
      <Compile Include="Assets\Scripts\SelectionManager.cs" />
      <Compile Include="Assets\Scripts\UIFollowMouse.cs" />

@@ -328,6 +328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteID: G
+  musicalScore: {fileID: 1054387647}
 --- !u!1 &147909807
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,6 +545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteID: D
+  musicalScore: {fileID: 1054387647}
 --- !u!1 &331932844
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,6 +796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteID: E
+  musicalScore: {fileID: 1054387647}
 --- !u!1 &499382699
 GameObject:
   m_ObjectHideFlags: 0
@@ -1577,6 +1580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteID: B
+  musicalScore: {fileID: 1054387647}
 --- !u!1 &815696632
 GameObject:
   m_ObjectHideFlags: 0
@@ -1980,13 +1984,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1054387647}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 80, y: 10, z: 0.1}
   m_Children: []
   m_Father: {fileID: 527736820}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 35, y: 0}
@@ -2059,10 +2063,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1054387647}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5105efd5acac2244493a280859a050d1, type: 3}
+  m_Script: {fileID: 11500000, guid: e740d6f6e9205674084a89aa40c62c3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteID: 
+  materials:
+  - {fileID: 2100000, guid: f7733b4247f2e97428626d0e79f62c07, type: 2}
+  - {fileID: 2100000, guid: 0907f6061d0098949af4a7bca767b5e8, type: 2}
+  - {fileID: 2100000, guid: fd31570e709ede0489fe33605c7bb76e, type: 2}
+  - {fileID: 2100000, guid: 1a9eb7637768af548a8a66d153b8778f, type: 2}
+  - {fileID: 2100000, guid: c8323691aace74f49a4b4c238b1f784a, type: 2}
+  - {fileID: 2100000, guid: 9b5d57d93df2485428aef5ee1cc7cc1a, type: 2}
+  - {fileID: 2100000, guid: c67403aa056cc2f4eb19d4a465014725, type: 2}
 --- !u!1 &1108784949
 GameObject:
   m_ObjectHideFlags: 0
@@ -2360,6 +2371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteID: 
+  musicalScore: {fileID: 0}
 --- !u!1 &1284701221
 GameObject:
   m_ObjectHideFlags: 0
@@ -2576,6 +2588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteID: A
+  musicalScore: {fileID: 1054387647}
 --- !u!1 &1389435942
 GameObject:
   m_ObjectHideFlags: 0
@@ -2978,6 +2991,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteID: F
+  musicalScore: {fileID: 1054387647}
 --- !u!1 &1739020123
 GameObject:
   m_ObjectHideFlags: 0
@@ -3117,6 +3131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteID: C
+  musicalScore: {fileID: 1054387647}
 --- !u!1 &1787842512
 GameObject:
   m_ObjectHideFlags: 0
@@ -3333,6 +3348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteID: C2
+  musicalScore: {fileID: 1054387647}
 --- !u!1 &1827609172
 GameObject:
   m_ObjectHideFlags: 0
@@ -3684,6 +3700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteID: 
+  musicalScore: {fileID: 1054387647}
 --- !u!1 &1882029195
 GameObject:
   m_ObjectHideFlags: 0
