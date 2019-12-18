@@ -19,7 +19,7 @@ public class AudioScript : MonoBehaviour
         }
     }*/
     void OnMouseDown() {
-        gameObject.GetComponent<AudioSource>().Play();
+        //gameObject.GetComponent<AudioSource>().Play();
     }
     
 }

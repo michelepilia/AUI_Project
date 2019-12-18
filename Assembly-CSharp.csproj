@@ -158,6 +158,7 @@
     <Compile Include="Assets\MidiPlayer\Scripts\Trinary Software\Timing.cs" />
     <Compile Include="Assets\MidiPlayer\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\AudioScript.cs" />
+    <Compile Include="Assets\Scripts\GridMidi.cs" />
     <None Include="Assets\MidiPlayer\Scripts\MPTKSoundFont\fluisynth_AUTHORS.txt" />
     <None Include="Assets\MidiPlayer\Scenes For Demo\Water\Water4\Shaders\FXWater4Simple.shader" />
     <None Include="Assets\MidiPlayer\Scripts\MPTKSoundFont\fluidsynth_LICENSE.txt" />
